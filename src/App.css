@@ -1,10 +1,25 @@
 *{
     margin: 0;
-    padding: 2vw;
+    padding: 0vw;
     box-sizing: border-box;
 }
-
+body{
+    background-image:  url('https://images.unsplash.com/photo-1708865746958-658369bdb6b4?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
 html , body{
     height: 100%;
     width: 100%;
+    animation-name: identifier;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+   
+}
+@keyframes identifier {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

@@ -4,19 +4,40 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color:antiquewhite;
+    background-color:rgb(167, 173, 171);
     gap:10px;
 }
-.wrapper button{
-padding:10px 20px;
-background:accordion;
-color:aquamarine;
-font-weight: bold;
-text-emphasis-color: black;
-text-decoration: underline;
-font-size: 20px;
-cursor:pointer;
+.wrapper button {
+    padding: 1em 2em;
+    background-color: transparent;
+    border: .01em solid cyan;
+    color: cyan;
+    font-weight: 600;
+    transition: all linear 0.5s;
+    position: relative;
+    overflow: hidden;
+}
 
+.wrapper button::after {
+    content: "";
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: cyan;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: all linear 0.5s;
+    z-index: -1;
+}
+
+.wrapper button:hover::after {
+    transform: translate(-50%,-50%) scale(4);
+}
+
+.wrapper button:hover {
+    color: black;
 }
 .accordion {
     width: 500px;
@@ -33,9 +54,8 @@ cursor:pointer;
 }
 
 title {
-    color: #ffffff;
+    color: black;
     display: flex;
-
     font-size: larger;
     font-size: 5em;
     justify-content: space-between;
@@ -44,7 +64,8 @@ title {
 }
 
 .content {
-    color: #ffffff;
+    color:Red;
+    font-size: medium;
     height: auto;
     ;
 }

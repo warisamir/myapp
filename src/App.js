@@ -1,11 +1,10 @@
 import './App.css';
-import Index from './component/rcg/Index';
-// import Index from './component/accodion/Index.jsx';
+import Star from './component/star-rating/Star';
 function App() {
   return (
     <div>
       {/* <Index/> */}
-      <Index/>
+      <Star noofStar={10}/>
     </div>
   );
 }
